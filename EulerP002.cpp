@@ -27,7 +27,7 @@ int main() {
 }
 int Fibonacci(int a,int b)
 {
-	total = total + a;
+	if(a%2 == 0) {total = total + a;}
 	if (b < END)	{return a + Fibonacci(b,(a+b));	}
 	return 0;
 }
