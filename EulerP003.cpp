@@ -19,7 +19,7 @@ int main() {
 	i = 0;
 	while (i <= Naux)
 	{
-		if ( fmod(NUMERO,i)== 0.0)
+		if (fmod(NUMERO,i)== 0.0)
 		{
 			cout <<"Valor " << i <<endl;
 			Naux = Naux / i;
