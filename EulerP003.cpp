@@ -8,12 +8,7 @@
 //============================================================================
 
 #include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
 #include <math.h>
-#include    <cstdlib>
-#include    <ctime>
-#include    <sys/timeb.h>
 
 using namespace std;
 
