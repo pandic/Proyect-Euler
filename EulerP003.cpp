@@ -21,7 +21,6 @@ int main() {
 	const double NUMERO = 600851475143;
 	double Naux = NUMERO;
 	double i = 0.0;
-	cout.precision(18);
 	i = 0;
 	while (i <= Naux)
 	{
