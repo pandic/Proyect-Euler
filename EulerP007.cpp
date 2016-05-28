@@ -12,25 +12,28 @@
 //============================================================================
 
 #include <iostream>
+
 using namespace std;
 
 int main() {
-	int longitud = 10001;
-	int primes[longitud];
+	int upperLimit = 10001;
+	int primes[upperLimit];
 
 
-	for(int i=0; i<longitud ;i++)
+	for(int i=0; i<upperLimit ;i++)
 		primes[i]=0;
 
-	for (int i=1;i<longitud;i++)
+	for (int i=1;i<upperLimit;i++)
 	{
-		for(int j=1; j<i;j++)
+		int j = 1;
+		while((primes[i-1] == 0) and j<i)
 		{
-			if ((i%j == 0) and (j != 1))
-				primes[i-1] = 1;
+			if ((i%j == 0) and (j != 1)){primes[i-1] = 1;}
+
+			j++;
 		}
 	}
-	for(int i=0;i<longitud ;i++)
+	for(int i=0;i<upperLimit ;i++)
 	{
 		if(primes[i] == 0)
 			cout << i+1 << " "<< endl; // prints
